@@ -76,7 +76,7 @@ int main( int argc, char* argv[] )
 {
 	ifstream lenfile(argv[1]);
 	double cutoff = atof(argv[2]);
-	//ifstream infile(argv[3]);
+	ifstream infile(argv[3]);
 
 	string a;	
 	unsigned int len;
