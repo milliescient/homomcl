@@ -74,6 +74,15 @@ float computePML(int len_a, int len_b, vector<pair<unsigned int, unsigned int> >
 
 int main( int argc, char* argv[] )
 {
+	if(argc != 4)
+	{
+		cerr << "usage: homomcl <length-file> <e-value> <blast-file>\n\n";
+		cerr << "length-file\t- tab separated table of sequence ids and their lengths\n";
+		cerr << "e-value\t\t- BLAST e-value cutoff\n";
+		cerr << "blast-file\t- tabular format (-outfmt 6) BLAST results file\n";
+		exit(1);
+	}
+
 	ifstream lenfile(argv[1]);
 	double cutoff = atof(argv[2]);
 	ifstream infile(argv[3]);
