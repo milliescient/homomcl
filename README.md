@@ -9,5 +9,7 @@
 The input arguments are
 
 `<length-file>` - A tab-delimited file of all sequence ids and their lengths
+
 `<e-value>` - The e-value cutoff used to prune edges from the graph
+
 `<blast-file>` - A BLAST results file in [tabular format (-outfmt 6)](https://github.com/seqan/lambda/wiki/BLAST-Output-Formats)
