@@ -120,7 +120,7 @@ int main( int argc, char* argv[] )
 	string c,d;
 	size_t index = 0;
 	float pml = 0.0;
-	while(cin >> a >> b >> tmp >> tmp >> tmp >> tmp >> qstart >> qend >> sstart >> send >> e >> tmp)
+	while(infile >> a >> b >> tmp >> tmp >> tmp >> tmp >> qstart >> qend >> sstart >> send >> e >> tmp)
 	{
 		if(indices.find(a) == indices.end())
 		{
