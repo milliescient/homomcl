@@ -127,9 +127,9 @@ int main( int argc, char* argv[] )
 			cerr << "Error: could not find length for " << a << endl;
 		}
 		if(indices.find(b) == indices.end())
-                {
-                        cerr << "Error: could not find length for " << b << endl;
-                }
+        {
+            cerr << "Error: could not find length for " << b << endl;
+        }
 
 		if(a == b)
 			continue;
@@ -213,14 +213,14 @@ int main( int argc, char* argv[] )
 		}
 	}
 
-	vector<string> seqs(indices.size(), "");
+	/*vector<string> seqs(indices.size(), "");
 	for(map<string, size_t>::iterator it = indices.begin(); it != indices.end();)
 	{
 		seqs[it->second] = it->first;
 		indices.erase(it++);
 	}
-	/* find orphan edges */
-	/*cout << "-------------------------------------------------------------------------\n";
+	// find orphan edges
+	cout << "-------------------------------------------------------------------------\n";
 	for(map<size_t, map<size_t, pair<Evalue,float> > >::iterator it = data.begin(); it != data.end(); it++)
 	{
 		for(map<size_t, pair<Evalue,float> >::iterator jt = it->second.begin(); jt != it->second.end(); jt++)
