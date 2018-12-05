@@ -8,7 +8,7 @@
 
 The input arguments are
 
-`<length-file>` - A tab-delimited file of all sequence ids and their lengths
+`<length-file>` - A tab-delimited file of all sequence ids and the corresponding sequence lengths
 
 `<e-value>` - The e-value cutoff used to prune edges from the graph
 
