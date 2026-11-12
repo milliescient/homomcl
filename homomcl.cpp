@@ -76,9 +76,9 @@ int main( int argc, char* argv[] )
 {
 	if(argc != 4)
 	{
-		cerr << "usage: homomcl <length-file> <e-value> <blast-file>\n\n";
+		cerr << "usage: homomcl <length-file> <pml-cutoff> <blast-file>\n\n";
 		cerr << "length-file\t- tab separated table of sequence ids and their lengths\n";
-		cerr << "e-value\t\t- BLAST e-value cutoff\n";
+		cerr << "pml-cutoff\t- percent match length cutoff (0-100), e.g. 50\n";
 		cerr << "blast-file\t- tabular format (-outfmt 6) BLAST results file\n";
 		exit(1);
 	}
